@@ -11,3 +11,12 @@ var waypoint = new Waypoint({
       this.element.innerHTML += "<p> added p tag</p>";
     }
   })
+
+
+  var waypoint2 = new Waypoint({
+    element: document.getElementById('section3'),
+    handler: function(direction) {
+      console.log('Scrolled to waypoint!')
+    },
+    offset: 200 //adds offset to waypoint
+  })
